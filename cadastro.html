@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="Mascara.js"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <title>CADASTRO</title>
+    <script>
+        function campo_obrigatorio(x)
+        {
+            if(x.value==""){
+                alert(" o campo "  + x.name + " não pode ficar em branco")
+            }
+        }
+        </script>
+    
+</head>
+<body class="bg1">
+    <center>
+    <img class="fotoc" src="img/m.jpg" width="100%" height="560">
+   <br>
+<br>
+        <font face="Tahoma" color="#FFFFFF"><H2 class="titulocurso">  Curso de Maquiagem Profissional</H2>
+            
+            <header>
+            <a href="cadastro.html">
+              <h5 class="logo3"></h5>
+            </a>
+          </header>
+            <a class="btn btn-dark btn-lg"  href="index.html" role="button">Inicial</a>
+            <a class="btn btn-danger btn-lg"  href="restore.html" role="button">Entre em contato</a>
+            <br>
+          </header>
+       </center>
+       <br>
+            <center><H1> Inscrição para o curso online </H1></a>
+                <br>
+                <section >
+                    <div class="box">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                              <label for="validationCustom01" class="form-label">Primeiro nome</label>
+                              <input type="text" name="Nome" class="form-control" id="validationCustom01" placeholder="Nome" value="" onblur="campo_obrigatorio(this)" required>
+                              <div class="valid-feedback">
+                                Parece bom!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationCustom02" class="form-label">Sobrenome</label>
+                              <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome" value="" required>
+                              <div class="valid-feedback">
+                                Parece bom!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationCustomUsername" class="form-label">Apelido</label>
+                              <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Login" aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    Escolha um nome de usuário..
+                                </div>
+                                </div>
+                           </div>
+                                <div class="col-md-4">
+                              <label for="validationCustom02" class="form-label">CPF</label>
+                              <input type="text" name="CPF" class="form-control"  id="validationCustom02" value="" placeholder="000.000.000.00" onkeypress="mascara(this, '###.###.###-##')" maxlength="14" onblur="campo_obrigatorio(this)" required>
+        
+                             <div class="invalid-feedback"> 
+                               Coloque seu CPF.
+                              </div>
+                              </div>
+                            
+                            <div class="col-md-6">
+                              <label for="validationCustom03" class="form-label">Cidade</label>
+                              <input type="text" class="form-control" id="validationCustom03" placeholder="Cidade" required>
+                              <div class="invalid-feedback">
+                                Forneça uma cidade válida.
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <label for="validationCustom04" class="form-label">Estado</label>
+                              <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Escolher...</option>
+                                <option>...</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">Al</option>
+                        <option value="AM">AM</option>
+                        <option value="AP">AP</option>                       
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option> 
+                        <option value="MG">MG</option>      
+                        <option value="MA">MA</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+
+                              </select>
+                              <div class="invalid-feedback">
+                                Selecione um estado válido.
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <label for="validationCustom05" class="form-label">CEP</label>
+                              <input type="text"   class="form-control" id="validationCustom05"  placeholder="00.000.000" onkeypress="mascara(this, '##.###-###')" maxlength="10" required>
+                              <div class="invalid-feedback">
+                                Forneça um CEP válido.
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label">Telefone</label>
+                                <input type="text" name="Telefone" class="form-control"  id="validationCustom02" value=""  placeholder="(DD) 0000-0000" onkeypress="mascara(this, '## #####-####')" maxlength="13" required>
+          
+                               <div class="invalid-feedback"> 
+                                 Coloque seu Telefone.
+                                </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="validationCustom02" class="form-label">Email</label>
+                                    <input type="text" name="Email" class="form-control"  id="validationCustom02" value=""  placeholder="****@gmail.com"  maxlength="25" onblur="campo_obrigatorio(this)" required>
+              
+                                   <div class="invalid-feedback"> 
+                                     Coloque seu Email.
+                                    </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="validationCustom02" class="form-label">Senha</label>
+                                        <input type="password" name="password" class="form-control"  id="validationCustom02" value=""  placeholder="senha"  maxlength="15" onblur="campo_obrigatorio(this)" required>
+                  
+                                       <div class="valid-feedback"> 
+                                         Parece bom!
+                                       </div>
+                                        </div>
+                                       
+                                        <textarea cols="30" size="10px" rows="10" placeholder="Digite aqui um pouco sobre você..."></textarea><p></p>
+
+
+                             <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Aceite os termos e condições
+                                </label>
+                                <div class="invalid-feedback">
+                                  Você deve concordar antes de enviar.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button class="btn btn-primary"  type="submit">Enviar</button>                   
+                              <button class="btn btn-primary" type="reset" >Limpar</button>
+                      </div>
+                     
+
+                     
+                    </form>
+                    </center>
+
+                    
+            
+
+        
+    
+</body>
+</html>

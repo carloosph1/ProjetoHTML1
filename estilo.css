@@ -1,0 +1,121 @@
+body{
+    padding: 0;
+    margin: 0%;
+    
+}
+
+.bg1{
+    background-color:#EED5D2;
+}
+
+.logo3{
+    width: 150px; height: 80px ; float:center ;
+    background: url(img/logo1.PNG) center center/200px no-repeat;
+    font-size: 0; 
+
+}
+
+.box{ position: relative;
+      max-width: 840px;
+      padding: 30px;
+      background: #DB7093;
+      box-shadow: 0 5px 15px rgb(0,0,0,.5);
+        
+}
+
+.fotoc{
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background: rgb(255, 255,240,.2);
+      box-shadow: 0 5px 15px rgb(0,0,0,.5);
+}
+
+form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background-color: #DB7093;
+    max-width: 500px;
+    
+
+}
+
+a:hover{
+    font-size: 22px;
+    box-shadow: 3px 0px 9px   #e6e6e6;
+    
+    border-radius: 5px;
+    -webkit-border-radius:5px ;
+    -moz-border-radius: 5px ;
+    border: 0px solid;
+    color: rgb(0, 0, 0);
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    color:#B03060;
+    
+}
+.titulo{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    color:#b10041;
+    text-shadow: 5px 5px 5px rgb(204, 86, 135);
+    
+}
+.titulo:hover{
+    transition: 4s;
+    text-shadow: 1200px 5px 15px;
+
+}
+h1{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px black; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input, textarea{
+    width: 200px;
+    padding: 10px;
+    color: rgb(12, 8, 8);
+    margin-left: 20px;
+    
+    border: 1px solid;
+
+}
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 5px 0px 9px #ffffff;
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+
+}
+
+.submit input{
+    background-color: #ffffff;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius:5px ;
+    -moz-border-radius: 5px ;
+    border: 1px solid;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+
+
+form label{
+    margin-left: 24px;
+    color: black;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
